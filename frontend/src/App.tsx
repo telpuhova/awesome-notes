@@ -51,6 +51,12 @@ const App = () => {
     event.preventDefault();
     console.log("title: ", title);
     console.log("content: ", content);
+    const newNote: Note = {
+      id: notes.length + 1,
+      title: title,
+      content: content,
+    };
+    setNotes([newNote, ...notes])
   }
   return (
     <div className="app-container">
