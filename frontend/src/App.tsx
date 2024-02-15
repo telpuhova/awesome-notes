@@ -56,7 +56,9 @@ const App = () => {
       title: title,
       content: content,
     };
-    setNotes([newNote, ...notes])
+    setNotes([newNote, ...notes]);
+    setTitle("");
+    setContent("");
   }
   return (
     <div className="app-container">
