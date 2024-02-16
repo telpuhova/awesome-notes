@@ -59,7 +59,8 @@ const App = () => {
     setNotes([newNote, ...notes]);
     setTitle("");
     setContent("");
-  }
+  };
+  const [selectedNote, setSelectedNote] = useState<Note | null>(null);
   return (
     <div className="app-container">
       <form onSubmit={handleAddNote} className="note-form">
