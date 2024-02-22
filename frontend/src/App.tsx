@@ -90,8 +90,10 @@ const App = () => {
     const updatedNotesList = notes.filter((note) => (note.id !== noteId));
     setNotes(updatedNotesList)
   }
+
   return (
     <div className="app-container">
+
       <form onSubmit={(event) => (selectedNote ? handleUpdateNote(event) : handleAddNote(event))} className="note-form">
         <input 
           value={title}
@@ -114,8 +116,8 @@ const App = () => {
         ) : (
           <button type="submit">Add Note</button>
         )}
-        
       </form>
+
       <div className="notes-grid">
         {notes.map((note) => (
         <div className="note-item" onClick={() => handleNoteClick(note)}>
@@ -127,6 +129,7 @@ const App = () => {
         </div>
         ))}
       </div>
+
     </div>
   );
 };

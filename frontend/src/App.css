@@ -20,6 +20,7 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-auto-rows: minmax(250px, auto);
   gap: 20px;
+  word-wrap: break-word;
 }
 
 .note-item {
