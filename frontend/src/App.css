@@ -21,6 +21,7 @@ body {
   grid-auto-rows: minmax(250px, auto);
   gap: 20px;
   word-wrap: break-word;
+  white-space: pre-line;
 }
 
 .note-item {
