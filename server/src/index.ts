@@ -10,6 +10,6 @@ app.get("/api/notes", async (req, res) => {
   res.json({ message: "success!" });
 });
 
-app.listen(5007, () => {
-  console.log("server running on localhost:5007");
+app.listen(5006, () => {
+  console.log("server running on localhost:5006");
 });
